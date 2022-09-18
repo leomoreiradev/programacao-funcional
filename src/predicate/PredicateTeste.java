@@ -20,6 +20,7 @@ public class PredicateTeste {
         pessoas.add(elaine);
         pessoas.add(leandro);
 
+        //Retorna um boolean (verifica se o predicado passado retorna true ou false)
         pessoas.removeIf(pessoa -> pessoa.getNome().contains("d"));
 
         pessoas.forEach(System.out::println);

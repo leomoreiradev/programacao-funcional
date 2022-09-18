@@ -18,7 +18,10 @@ public class FunctionTeste {
         List<Pessoa> pessoas = new ArrayList<>();
         pessoas.add(elaine);
         pessoas.add(leandro);
-
+        /*
+        Função de interface pública @FunctionalInterface <T,R>
+        Representa uma função que aceita um argumento e produz um resultado.
+        */
         pessoas.stream()
                 .map(pessoa -> pessoa.getNome().concat(" Oliveira")).forEach(System.out::println);
     }
